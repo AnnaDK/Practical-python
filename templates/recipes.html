@@ -10,35 +10,35 @@
    <h5 class="card-title">{{recipe.recipe_name}}</h5>
     <span>{{recipe.category_name}}</span>
   </div>
-  <ul class="list-group accordion list-group-flush" id="{{(recipe.recipe._id)}}">
+  <ul class="list-group accordion list-group-flush" id="accordionList">
     <li class="list-group-item" id="headingOne">
     <h5 class="mb-0">
-        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseListOne" aria-expanded="false" aria-controls="collapseListOne">
+        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseListOne" aria-expanded="false" aria-controls="collapseListOne">
           Ingredients
         </button>
       </h5>
-      <div id="collapseListOne" class="collapse" aria-labelledby="headingOne" data-parent="#{{(recipe.recipe._id)}}">
+      <div id="collapseListOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionList">
       <div class="card-body">
         <span>{{recipe.ingredients}}</span>
       </div>
     </div>
       </li>
     <li class="list-group-item" id="headingTwo"><h5 class="mb-0">
-        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseListTwo" aria-expanded="false" aria-controls="collapseListTwo">
+        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseListTwo" aria-expanded="false" aria-controls="collapseListTwo">
           Preparation
         </button>
       </h5>
-      <div id="collapseListTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#{{(recipe.recipe._id)}}">
+      <div id="collapseListTwo" class="collapse" aria-labelledby="#headingTwo" data-parent="#accordionList">
       <div class="card-body">
         <span>{{recipe.instruction}}</span>
       </div>
     </div></li>
     <li class="list-group-item" id="headingThree"><h5 class="mb-0">
-        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseListThree" aria-expanded="false" aria-controls="collapseListThree">
+        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseListThree" aria-expanded="false" aria-controls="collapseListThree">
           Source
         </button>
       </h5>
-      <div id="collapseListThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionList">
+      <div id="collapseListThree" class="collapse" aria-labelledby="#headingThree" data-parent="#accordionList">
       <div class="card-body">
         <a href="{{recipe.source}}" class="card-link">Recipe found here!</a>
       </div>
