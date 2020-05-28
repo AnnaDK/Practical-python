@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;900&display=swap');
+/*
+font-family: 'Source Sans Pro', sans-serif;
+Mermaid Colours Color Palette
+#004749	(0,71,73)
+#00535a	(0,83,90)
+#00746b	(0,116,107)
+#00945c	(0,148,92)
+#00a950 (0,169,80)
+*/
+.container{
+    width: 90%;
+    
+}
+.navbar-brand{
+    font-size: 40px;
+    font-weight: 600;
+}
+.navbar-dark{
+    background-color: #546e7a;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 25px;
+}
+.active {
+    font-size: 30px;
+    color: #fff;
+}
+
+.card{
+    background-color:#546e7a!important; 
+    color: #fff;
+    font-family: 'Source Sans Pro', sans-serif;
+    margin-top: 10px;
+    
+}
+.list-group, .list-group-item{
+    background-color:#546e7a!important; 
+    color: #fff;
+    font-family: 'Source Sans Pro', sans-serif;
+    }
+
+/*Solution for the sizing images in card-img-top found on https://stackoverflow.com/questions/37287153/how-to-get-images-in-bootstraps-card-to-be-the-same-height-width*/
+.card-img-top {
+    width: 100%;
+    height: 15vw;
+    object-fit: cover;
+}
+
+.jumbotron {
+  background-image:url("");
+  background-size: cover;
+}
+
+
+
+
+
+
+@media (max-width: 575.98px) { 
+    .card-img-top {
+    height: 70vw;
+    
+} }
+
+@media (max-width: 767.98px) { 
+    .card-img-top {
+    height: 50vw;
+    
+} }
